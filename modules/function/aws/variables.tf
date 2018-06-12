@@ -1,7 +1,11 @@
 variable "name" {
   type        = "string"
-  default     = ""
   description = "Name of the function"
+}
+
+variable "bucket" {
+  type        = "string"
+  description = "Deployment bucket for the function"
 }
 
 variable "description" {

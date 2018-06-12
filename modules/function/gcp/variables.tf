@@ -1,6 +1,5 @@
 variable "name" {
   type        = "string"
-  default     = ""
   description = "Name of the function"
 }
 

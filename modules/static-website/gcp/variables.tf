@@ -36,10 +36,12 @@ variable "region" {
 
 variable "name" {
   type        = "string"
+  default     = ""
   description = "Logical name of the site"
 }
 
 variable "template_values" {
   type        = "map"
+  default     = {}
   description = "templateValues"
 }
