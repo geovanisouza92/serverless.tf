@@ -3,6 +3,11 @@ variable "name" {
   description = "Name of the function"
 }
 
+variable "bucket" {
+  type        = "string"
+  description = "Deployment bucket for the function"
+}
+
 variable "description" {
   type        = "string"
   default     = ""
@@ -21,14 +26,14 @@ variable "runtime" {
 }
 
 variable "memory_size" {
-  type        = "number"
-  default     = 128
+  type        = "string"
+  default     = "128"
   description = "Memory size of the function"
 }
 
 variable "timeout" {
-  type        = "number"
-  default     = 3
+  type        = "string"
+  default     = "3"
   description = "Timeout of the function"
 }
 
