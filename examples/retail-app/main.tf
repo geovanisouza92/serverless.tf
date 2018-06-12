@@ -15,19 +15,19 @@ module "productsApi" {
     {
       path     = "/products"
       method   = "post"
-      function = "${module.createProduct.ref}"
+      function = "${module.createProduct.endpoint}"
       cors     = true
     },
     {
       path     = "/{id}"
       method   = "get"
-      function = "${module.getProduct.ref}"
+      function = "${module.getProduct.endpoint}"
       cors     = true
     },
     {
       path     = "/catalog/{...categories}"
       method   = "post"
-      function = "${module.listProduct.ref}"
+      function = "${module.listProduct.endpoint}"
       cors     = true
     },
   ]
