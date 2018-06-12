@@ -22,14 +22,14 @@ variable "runtime" {
 }
 
 variable "memory_size" {
-  type        = "number"
-  default     = 128
+  type        = "string"
+  default     = "128"
   description = "Memory size of the function"
 }
 
 variable "timeout" {
-  type        = "number"
-  default     = 3
+  type        = "string"
+  default     = "3"
   description = "Timeout of the function"
 }
 
