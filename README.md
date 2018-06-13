@@ -13,11 +13,11 @@ Using Serverless Framework, if you need something more sofisticated like DynamoD
 ## Advantages
 
 - does not need Node.js, nor focus on Node.js functions/apps as first-class citizens: bring your own stack;
-- support more than AWS, with the same "interface" (module + variables). See [examples](./examples/); Many kinds of resources from different providers are supported;
+- support more than AWS, with the same "interface" (module + variables or custom modules). See [examples](./examples/); Many kinds of resources from different providers are supported;
 - just one syntax to learn, reuse it when defining "components" (optinionated modules) or custom [resources](https://www.terraform.io/intro/getting-started/dependencies.html#assigning-an-elastic-ip);
 - built-in support for stages: See [workspaces](https://www.terraform.io/docs/state/workspaces.html);
 - plan and understand each change with `terraform plan` and deploy with `terraform apply` (always incremental deployments);
-- support for pretty much everything Terraform supports.
+- support for pretty much everything Terraform supports, including extending resources or custom provisioning through [terraform plugins](https://www.terraform.io/docs/plugins/index.html) (tech-specific packaging included).
 
 ## Disvantages
 
